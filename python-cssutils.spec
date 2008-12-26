@@ -2,7 +2,7 @@
 %define name	python-%{oname}
 
 Name:		%{name}
-Version:	0.9.5
+Version:	0.9.5.1
 Release:	%mkrel 1
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
