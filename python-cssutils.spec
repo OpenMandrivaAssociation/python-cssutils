@@ -37,5 +37,6 @@ rm -rf %{buildroot}
 %{py_puresitedir}/%{oname}
 %{py_puresitedir}/encutils
 %{py_puresitedir}/tests
+%defattr(755,root,root,-)
 %{py_puresitedir}/%{oname}-%{version}-py%{pyver}.egg-info
 
