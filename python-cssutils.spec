@@ -1,14 +1,16 @@
 %define oname	cssutils
 %define name	python-%{oname}
 
+%define prerel b3
+
 Name:		%{name}
-Version:	0.9.5.1
-Release:	%mkrel 3
+Version:	0.9.7
+Release:	%mkrel -c %prerel 1
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
 License:	LGPLv3+
 URL:		http://code.google.com/p/cssutils/
-Source0:	http://cssutils.googlecode.com/files/%{oname}-%{version}.zip
+Source0:	http://cssutils.googlecode.com/files/%{oname}-%{version}%prerel.zip
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root 
 BuildArch:	noarch 
 BuildRequires:	python-devel
@@ -20,7 +22,7 @@ cssutils is a Python module for building and parsing CSS (Cascading
 Style Sheets).
   
 %prep
-%setup -q -n %{oname}-%{version}
+%setup -q -n %{oname}-%{version}%prerel
 
 %build 
 
@@ -36,7 +38,5 @@ rm -rf %{buildroot}
 %{_bindir}/css*
 %{py_puresitedir}/%{oname}
 %{py_puresitedir}/encutils
-%{py_puresitedir}/tests
 %defattr(755,root,root,-)
-%{py_puresitedir}/%{oname}-%{version}-py%{pyver}.egg-info
-
+%{py_puresitedir}/%{oname}-%{version}%prerel-py%{pyver}.egg-info
