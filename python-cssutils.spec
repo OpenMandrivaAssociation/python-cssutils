@@ -5,7 +5,7 @@
 
 Name:		%{name}
 Version:	0.9.7
-Release:	%mkrel -c %prerel 1
+Release:	%mkrel -c %prerel 2
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
 License:	LGPLv3+
@@ -15,7 +15,6 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 BuildArch:	noarch 
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
-%{py_requires}
   
 %description 
 cssutils is a Python module for building and parsing CSS (Cascading
