@@ -31,8 +31,8 @@ python setup.py install --root=%{buildroot} --compile --optimize=2
 %{py_puresitedir}/encutils
 %defattr(755,root,root,-)
 %{py_puresitedir}/%{oname}-%{version}-py%{py_ver}.egg-info
-%{py_puresitedir}/tests/*py
-%{py_puresitedir}/tests/test_encutils/*py
+# %{py_puresitedir}/tests/*py
+# %{py_puresitedir}/tests/test_encutils/*py
 
 
 %changelog
