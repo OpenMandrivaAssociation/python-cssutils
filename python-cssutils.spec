@@ -3,7 +3,7 @@
 
 Name:		%{name}
 Version:	0.9.10
-Release:	1
+Release:	2
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
 License:	LGPLv3+
