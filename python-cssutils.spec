@@ -2,13 +2,13 @@
 %define name	python-%{oname}
 
 Name:		%{name}
-Version:	0.9.9
-Release:	1
+Version:	0.9.10
+Release:	2
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
 License:	LGPLv3+
 URL:		http://code.google.com/p/cssutils/
-Source0:	http://cssutils.googlecode.com/files/%{oname}-%{version}.zip
+Source0:	https://pypi.python.org/packages/source/c/cssutils/cssutils-%{version}.zip
 BuildArch:	noarch 
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
@@ -31,8 +31,8 @@ python setup.py install --root=%{buildroot} --compile --optimize=2
 %{py_puresitedir}/encutils
 %defattr(755,root,root,-)
 %{py_puresitedir}/%{oname}-%{version}-py%{py_ver}.egg-info
-%{py_puresitedir}/tests/*py
-%{py_puresitedir}/tests/test_encutils/*py
+# %{py_puresitedir}/tests/*py
+# %{py_puresitedir}/tests/test_encutils/*py
 
 
 %changelog
@@ -60,5 +60,6 @@ python setup.py install --root=%{buildroot} --compile --optimize=2
 * Wed Jul 30 2008 Adam Williamson <awilliamson@mandriva.org> 0.9.5-1mdv2009.0
 + Revision: 255575
 - import python-cssutils
+
 
 
