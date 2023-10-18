@@ -1,7 +1,7 @@
 %define oname	cssutils
 
 Name:		python-%{oname}
-Version:	2.7.1
+Version:	2.9.0
 Release:	1
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
