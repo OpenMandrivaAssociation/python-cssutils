@@ -2,7 +2,7 @@
 
 Name:		python-%{oname}
 Version:	2.11.1
-Release:	1
+Release:	2
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
 License:	LGPLv3+
