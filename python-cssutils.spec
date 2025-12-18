@@ -11,6 +11,7 @@ Source0:	https://files.pythonhosted.org/packages/source/c/cssutils/cssutils-%{ve
 BuildArch:	noarch 
 BuildRequires:	python
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools)
   
 %description 
 cssutils is a Python module for building and parsing CSS (Cascading
