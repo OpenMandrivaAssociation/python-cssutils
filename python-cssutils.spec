@@ -1,8 +1,8 @@
 %define oname	cssutils
 
 Name:		python-%{oname}
-Version:	2.11.1
-Release:	2
+Version:	2.15.0
+Release:	1
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
 License:	LGPLv3+
@@ -18,7 +18,7 @@ cssutils is a Python module for building and parsing CSS (Cascading
 Style Sheets).
  
 %prep
-%autosetup -p1 -n %{oname}-%{version}
+%autosetup -p1 -n cssutils-2.15.0
 
 %build 
 %py_build
