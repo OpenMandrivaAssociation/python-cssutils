@@ -12,6 +12,8 @@ BuildArch:	noarch
 BuildRequires:	python
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(encutils)
+BuildRequires:	python%{pyver}dist(more-itertools)
   
 %description 
 cssutils is a Python module for building and parsing CSS (Cascading
