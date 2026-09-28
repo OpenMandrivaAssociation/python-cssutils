@@ -29,5 +29,4 @@ Style Sheets).
 %files  
 %{_bindir}/css*
 %{py_puresitedir}/%{oname}
-%{py_puresitedir}/encutils
 %{py_puresitedir}/*.dist-info
