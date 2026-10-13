@@ -2,16 +2,19 @@
 
 Name:		python-%{oname}
 Version:	2.15.0
-Release:	1
+Release:	2
 Summary:	Python module for parsing and building CSS 
 Group:		Development/Python
 License:	LGPLv3+
 URL:		https://pypi.org/project/cssutils/
 Source0:	https://files.pythonhosted.org/packages/source/c/cssutils/cssutils-%{version}.tar.gz
 BuildArch:	noarch 
-BuildRequires:	python
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(wheel)
+BuildRequires:	python%{pyver}dist(coherent.licensed)
 BuildRequires:	python%{pyver}dist(encutils)
 BuildRequires:	python%{pyver}dist(more-itertools)
   
@@ -20,9 +23,10 @@ cssutils is a Python module for building and parsing CSS (Cascading
 Style Sheets).
  
 %prep
-%autosetup -p1 -n cssutils-2.15.0
+%autosetup -p1 -n cssutils-%{version}
 
-%build 
+%build
+export SETUPTOOLS_SCM_PRETEND_VERSION="%{version}"
 %py_build
 
 %install 
